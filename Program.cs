@@ -7,13 +7,12 @@ int OutNumber( int number)
     int result = 0;
     for(int i = 0; i < number; i++)
     {
-        Console.Write($"Enter #{i + 1}: ");
-        if(Convert.ToInt32(Console.ReadLine()) > 0)
-            result++;
+       Console.Write($"Enter #{i + 1}: ");
+       if(Convert.ToInt32(Console.ReadLine()) > 0)
+          result++;
     }
     return result;
 }
-
 Console.Write("Enter the number of numbers: ");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($" {OutNumber(number)} positive numbers");
@@ -34,9 +33,9 @@ double[] IntersectionPoint (double k1, double b1, double k2, double b2)
         result[2] = OVERLAYLINES;
     else
     {
-        result[2] = HAS_INTERSECTION;
-        result[0] = (b2 - b1) / (k1 - k2); 
-        result[1] = k1 * result[0] + b1; 
+      result[2] = HAS_INTERSECTION;
+      result[0] = (b2 - b1) / (k1 - k2); 
+      result[1] = k1 * result[0] + b1; 
     }
     return result;  
 }
